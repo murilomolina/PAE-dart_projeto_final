@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio/pages/pagina_certificados.dart';
 import 'package:portifolio/pages/pagina_curriculo.dart';
 import 'package:portifolio/pages/pagina_links.dart';
 
@@ -42,6 +43,14 @@ class PaginaInicial extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const PaginaCurriculo()));
           },
            child: const Text('Meu curriculo'),
+           ),
+           ElevatedButton(
+            onPressed: () {
+             Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PaginaCertificados()));
+          },
+           child: const Text('Meus certificados'),
            )
         ],
       )
