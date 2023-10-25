@@ -9,10 +9,12 @@ class PaginaCertificados extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Meus certificados'),
       ),
-      body: ListView(
+      body: const Center(
+        child: Column(
         children: [
-          // adicionar o pdf para vizualização e criar a classe para o usuario conseguir fazer o download
-        ],
+      //     MyPdfViewer(),
+       ],
+       ),
       ),
     );
   }

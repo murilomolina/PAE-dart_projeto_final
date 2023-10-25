@@ -11,50 +11,45 @@ class PaginaInicial extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Portifólio'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.more_vert),
-            onPressed: () {
-            // Método: opcoesBar(context);
-          })
-        ],
       ),
-    body:  Center(
-      child: Column(
+      body: Center(
+          child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children:[
-          const Text('Bem-vindo ao meu portifólio!',
-          style: TextStyle(fontSize: 30),
+        children: [
+          const Text(
+            'Bem-vindo ao meu portifólio!',
+            style: TextStyle(fontSize: 30),
           ),
-          const SizedBox(height:20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-             Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PaginaLinks()));
-          },
-           child: const Text('Meus Links'),
-           ),
-          const SizedBox(height:20),
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const PaginaLinks()));
+            },
+            child: const Text('Meus Links'),
+          ),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-             Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PaginaCurriculo()));
-          },
-           child: const Text('Meu curriculo'),
-           ),
-           ElevatedButton(
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PaginaCurriculo()));
+            },
+            child: const Text('Meu curriculo'),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
             onPressed: () {
-             Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PaginaCertificados()));
-          },
-           child: const Text('Meus certificados'),
-           )
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PaginaCertificados()));
+            },
+            child: const Text('Meus certificados'),
+          )
         ],
-      )
-      ),
+      )),
     );
   }
 }
