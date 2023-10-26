@@ -51,10 +51,13 @@ class PaginaCurriculo extends StatelessWidget {
           ),
         ],
       ),
-      body:  ListView(
+      body:  Center(
+        child:
+        ListView(
         children:[
-        Image.asset('lib/assets/curriculo-teste_page-0001.jpg'),
+        Image.asset('lib/assets/curriculo-teste_page-0001.jpg', height: 1000),
         ],
+      ),
       ),
     );
   }
