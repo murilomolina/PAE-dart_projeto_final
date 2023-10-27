@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portifolio/pages/pagina_certificados.dart';
 import 'package:portifolio/pages/pagina_curriculo.dart';
 import 'package:portifolio/pages/pagina_links.dart';
+import 'package:portifolio/widgets/custom_button.dart.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});
@@ -11,46 +12,41 @@ class PaginaInicial extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Portifólio'),
+        title: const Text('Portfólio'),
       ),
-      body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        
         children: [
-          const Text(
-            'Bem-vindo ao meu portifólio!',
-            style: TextStyle(fontSize: 30),
+          Padding(
+              padding: const EdgeInsets.all(20.0), 
+          child: ClipRRect(
+          borderRadius: BorderRadius.circular(100),
+          child: Image.network(
+            'https://avatars.githubusercontent.com/u/122751852?v=4',width: 100),
+            ),
           ),
-          const SizedBox(height: 20),
-          ElevatedButton(
+
+          CustomButton(
+            text: 'Meus Links',
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const PaginaLinks()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => PaginaLinks()));
             },
-            child: const Text('Meus Links'),
           ),
-          const SizedBox(height: 20),
-          ElevatedButton(
+          CustomButton(
+            text: 'Meu currículo',
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PaginaCurriculo()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaCurriculo()));
             },
-            child: const Text('Meu curriculo'),
           ),
-          const SizedBox(height: 20),
-          ElevatedButton(
+          CustomButton(
+            text: 'Meus certificados',
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PaginaCertificados()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => PaginaCertificados()));
             },
-            child: const Text('Meus certificados'),
-          )
+          ),
         ],
-      )),
+      )
     );
   }
 }
