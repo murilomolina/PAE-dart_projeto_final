@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio/widgets/sidebar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PaginaLinks extends StatelessWidget {
@@ -14,6 +15,7 @@ class PaginaLinks extends StatelessWidget {
         centerTitle: true,
         title: const Text('Meus links'),
       ),
+      drawer: const Sidebar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

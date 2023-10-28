@@ -13,10 +13,13 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(height: 20),
-        ElevatedButton(
+        const SizedBox(height: 40),
+        SizedBox(
+          width: 150,
+          child: ElevatedButton(
           onPressed: onPressed,
           child: Text(text),
+        ),
         ),
       ],
     );

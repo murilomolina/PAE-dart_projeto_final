@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio/widgets/sidebar.dart';
 
 class PaginaCertificados extends StatelessWidget {
   const PaginaCertificados({super.key});
@@ -10,6 +11,7 @@ class PaginaCertificados extends StatelessWidget {
         centerTitle: true,
         title: const Text('Meus certificados'),
       ),
+      drawer: const Sidebar(),
       body: ListView(
         children: [
           Wrap(

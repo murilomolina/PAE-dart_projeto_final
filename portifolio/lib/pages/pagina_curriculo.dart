@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:portifolio/widgets/sidebar.dart';
 
 
 
@@ -51,6 +52,7 @@ class PaginaCurriculo extends StatelessWidget {
           ),
         ],
       ),
+      drawer: const Sidebar(),
       body:  Center(
         child:
         ListView(
