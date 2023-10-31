@@ -11,7 +11,7 @@ class PaginaCurriculo extends StatelessWidget {
   const PaginaCurriculo({super.key});
 
   Future<void> _downloadPDF(BuildContext context) async {
-    const assetPath = 'lib/assets/curriculo-teste.pdf';
+    const assetPath = 'lib/assets/curriculo.pdf';
     final directory = await getApplicationDocumentsDirectory();
     final filePath = '${directory.path}/curriculo.pdf';
 
@@ -57,7 +57,7 @@ class PaginaCurriculo extends StatelessWidget {
         child:
         ListView(
         children:[
-        Image.asset('lib/assets/curriculo-teste_page-0001.jpg', height: 1000),
+        Image.asset('lib/assets/curriculo.jpg', height: 1000),
         ],
       ),
       ),

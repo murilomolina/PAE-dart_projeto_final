@@ -69,8 +69,8 @@ flutter:
       - lib/assets/certificados/clmsCertificate_page-0001.jpg
       - lib/assets/certificados/CM3033-IntrodjucaoaCienciadjeDadjos-2023 (1)_page-0001.jpg
       - lib/assets/certificados/CM4042-FundjamentosdjeComputacaoemNuvem-AWSAcadjemy-2023 (1)_page-0001.jpg
-      - lib/assets/curriculo-teste_page-0001.jpg
-      - lib/assets/curriculo-teste.pdf
+      - lib/assets/curriculo.jpg
+      - lib/assets/curriculo.pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
