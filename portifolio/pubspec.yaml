@@ -31,10 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.0.5
-  syncfusion_flutter_pdfviewer: ^23.1.42
   path_provider: ^2.0.2
   fluttertoast: ^8.0.8
   sidebarx: ^0.16.2
+  http: ^1.1.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -71,6 +71,7 @@ flutter:
       - lib/assets/certificados/CM4042-FundjamentosdjeComputacaoemNuvem-AWSAcadjemy-2023 (1)_page-0001.jpg
       - lib/assets/curriculo.jpg
       - lib/assets/curriculo.pdf
+      - lib/assets/images/backgroung-binary.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

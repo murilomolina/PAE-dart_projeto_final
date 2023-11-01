@@ -3,6 +3,7 @@ import 'package:portifolio/pages/pagina_certificados.dart';
 import 'package:portifolio/pages/pagina_curriculo.dart';
 import 'package:portifolio/pages/pagina_inicial.dart';
 import 'package:portifolio/pages/pagina_links.dart';
+import 'package:portifolio/pages/pagina_projetos.dart';
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
@@ -46,6 +47,12 @@ class Sidebar extends StatelessWidget {
             title: const Text('Certificados'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaCertificados()));
+            },
+          ),
+          ListTile(
+            title: const Text('Projetos'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaProjetos()));
             },
           ),
         ],
