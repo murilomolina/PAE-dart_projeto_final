@@ -86,8 +86,12 @@ class PaginaInicial extends StatelessWidget {
               ),
             ),
 
-            // TEXTO CENTRALIZADO
-            const Expanded(
+
+            Container(
+              color: const Color.fromARGB(255, 180, 211, 236),
+              child:
+                // TEXTO CENTRALIZADO
+                const Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,6 +101,7 @@ class PaginaInicial extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 34,
                       fontWeight: FontWeight.bold,
+                      // color: Color.fromARGB(255, 255, 255, 255)
                     ),
                   ),
                   SizedBox(height: 20),
@@ -107,6 +112,7 @@ class PaginaInicial extends StatelessWidget {
                         'Sou graduando em Ciência da Computação pelo IMT - Mauá - Instituto Mauá de Tecnologia. Falante fluente de inglês há 4 anos',
                         style: TextStyle(
                           fontSize: 20,
+                          // color: Color.fromARGB(255, 255, 255, 255)
                         ),
                         textAlign: TextAlign.center,
                         maxLines: 2,
@@ -119,6 +125,7 @@ class PaginaInicial extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 34,
                       fontWeight: FontWeight.bold,
+                      // color: Color.fromARGB(255, 255, 255, 255)
                     ),
                   ),
                   SizedBox(height: 20),
@@ -140,13 +147,16 @@ class PaginaInicial extends StatelessWidget {
         ''',
                     style: TextStyle(
                       fontSize: 20,
+                      // color: Color.fromARGB(255, 255, 255, 255)
                     ),
                     textAlign: TextAlign.center,
                   ),
                 ],
               ),
             ),
+            ),
           ],
-        ));
+        )
+    );
   }
 }

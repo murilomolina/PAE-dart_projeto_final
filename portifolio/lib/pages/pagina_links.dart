@@ -30,7 +30,7 @@ class PaginaLinks extends StatelessWidget {
                       backgroundColor:
                           const MaterialStatePropertyAll(Colors.white),
                           shadowColor: MaterialStateProperty.all(Colors.grey),
-                          elevation: MaterialStateProperty.all(20.0)),
+                          elevation: MaterialStateProperty.all(50.0)),
                   onPressed: () {
                     _launchURL(urlGit);
                   },
@@ -48,7 +48,7 @@ class PaginaLinks extends StatelessWidget {
                       backgroundColor:
                           const MaterialStatePropertyAll(Colors.white),
                           shadowColor: MaterialStateProperty.all(Colors.grey),
-                          elevation: MaterialStateProperty.all(20.0)),
+                          elevation: MaterialStateProperty.all(50.0)),
                           
                   onPressed: () {
                     _launchURL(urlLinkedin);

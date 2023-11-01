@@ -72,6 +72,7 @@ flutter:
       - lib/assets/curriculo.jpg
       - lib/assets/curriculo.pdf
       - lib/assets/images/backgroung-binary.jpg
+      - lib/assets/images/background-abstract.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
