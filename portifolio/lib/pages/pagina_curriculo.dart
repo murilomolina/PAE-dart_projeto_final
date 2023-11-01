@@ -33,6 +33,7 @@ class PaginaCurriculo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 0, 140, 196),      
         title: const Text('Meu Currículo'),
         actions: [
           IconButton(

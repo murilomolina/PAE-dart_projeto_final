@@ -4,6 +4,7 @@ import 'package:portifolio/pages/pagina_curriculo.dart';
 import 'package:portifolio/pages/pagina_links.dart';
 import 'package:portifolio/pages/pagina_projetos.dart';
 import 'package:portifolio/widgets/custom_button.dart.dart';
+import 'package:portifolio/components/sobre_mim.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});
@@ -13,6 +14,7 @@ class PaginaInicial extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           centerTitle: false,
+          backgroundColor: const Color.fromARGB(255, 0, 140, 196),
           title: const Text(
             'Portfólio',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
@@ -85,76 +87,7 @@ class PaginaInicial extends StatelessWidget {
                 ],
               ),
             ),
-
-
-            Container(
-              color: const Color.fromARGB(255, 180, 211, 236),
-              child:
-                // TEXTO CENTRALIZADO
-                const Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    'Sobre Mim:',
-                    style: TextStyle(
-                      fontSize: 34,
-                      fontWeight: FontWeight.bold,
-                      // color: Color.fromARGB(255, 255, 255, 255)
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Center(
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text(
-                        'Sou graduando em Ciência da Computação pelo IMT - Mauá - Instituto Mauá de Tecnologia. Falante fluente de inglês há 4 anos',
-                        style: TextStyle(
-                          fontSize: 20,
-                          // color: Color.fromARGB(255, 255, 255, 255)
-                        ),
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 40),
-                  Text(
-                    'Minhas Competências:',
-                    style: TextStyle(
-                      fontSize: 34,
-                      fontWeight: FontWeight.bold,
-                      // color: Color.fromARGB(255, 255, 255, 255)
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Text(
-                    '''
-        UML (Linguagem de modelagem unificada) - IMT - Mauá - Instituto Mauá de Tecnologia
-
-        SQL - IMT - Mauá - Instituto Mauá de Tecnologia 
-
-        Ciência de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-                        
-        Banco de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-
-        Modelagem de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-
-        Java - IMT - Mauá - Instituto Mauá de Tecnologia
-
-        Python - IMT - Mauá - Instituto Mauá de Tecnologia
-        ''',
-                    style: TextStyle(
-                      fontSize: 20,
-                      // color: Color.fromARGB(255, 255, 255, 255)
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
-            ),
-            ),
+            const SobreMim()
           ],
         )
     );

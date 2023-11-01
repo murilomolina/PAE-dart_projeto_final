@@ -9,6 +9,7 @@ class PaginaCertificados extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 0, 140, 196),       
         title: const Text('Meus Certificados'),
       ),
       drawer: const Sidebar(),
@@ -23,7 +24,7 @@ class PaginaCertificados extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 158, 153, 153),
+                      color: const Color.fromARGB(255, 0, 11, 105),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Image.asset(
@@ -33,7 +34,7 @@ class PaginaCertificados extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 158, 153, 153),
+                      color: const Color.fromARGB(255, 0, 11, 105),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Image.asset(
@@ -43,7 +44,7 @@ class PaginaCertificados extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 158, 153, 153),
+                      color: const Color.fromARGB(255, 0, 11, 105),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Image.asset(
@@ -53,7 +54,7 @@ class PaginaCertificados extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 158, 153, 153),
+                      color: const Color.fromARGB(255, 0, 11, 105),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Image.asset(
