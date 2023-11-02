@@ -1,13 +1,11 @@
 // ignore_for_file: use_build_context_synchronously, deprecated_member_use
 import 'package:flutter/material.dart';
+import 'package:portifolio/components/download_file.dart';
 import 'package:portifolio/widgets/sidebar.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class PaginaCurriculo extends StatelessWidget {
   const PaginaCurriculo({Key? key}) : super(key: key);
-
-  final String githubFileUrl = 'https://github.com/murilomolina/PAE-dart_projeto_final/blob/main/portifolio/lib/assets/curriculo/curriculo.pdf';
-
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class PaginaCurriculo extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.download),
-            onPressed: () => openGithubFile(context),
+            onPressed: () => DownloadFile.downloadFile(context),
           ),
         ],
       ),
@@ -36,25 +34,5 @@ class PaginaCurriculo extends StatelessWidget {
       ),
     );
   }
-   void showSnackBar(BuildContext context, String message) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(message),
-      ),
-    );
-  }
-
-  Future<void> openGithubFile(BuildContext context) async {
-
-    final canLaunchUrl = await canLaunch(githubFileUrl);
-    if (canLaunchUrl) {
-      await launch(githubFileUrl);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Não foi possível abrir o arquivo.'),
-        ),
-      );
-    }
-  }
+    
 }
