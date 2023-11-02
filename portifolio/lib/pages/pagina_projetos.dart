@@ -13,30 +13,17 @@ class PaginaProjetos extends StatelessWidget {
         title: const Text('Meus Projetos'),
       ),
       drawer: const Sidebar(),
-       body: Stack(
-      fit: StackFit.expand,
-      children: [
-        Image.asset(
-          'lib/assets/images/backgroung-binary.jpg', 
-          fit: BoxFit.cover,
-          color: Colors.black.withOpacity(0.5), 
-          colorBlendMode: BlendMode.darken,
-        ),
-        Center(
-          child: Container(
-            padding: const EdgeInsets.all(16.0),
-            color: Colors.black.withOpacity(0.5), 
-            child: const Text(
-              'PÁGINA EM MANUTENÇÃO',
-              style: TextStyle(
-                fontSize: 30,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-            ),
-          ),
-        ),
-      ],
-    ),
+       body: Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1400),
+            child: ListView(
+              children:  const [
+              ]
+       )
+     ),
+    )
   );
+  
   }
 }
