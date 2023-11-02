@@ -48,7 +48,7 @@ class PaginaCurriculo extends StatelessWidget {
           color: const Color.fromARGB(255, 2, 36, 63),
           child: ListView(
             children: [
-              Image.asset('lib/assets/curriculo.jpg', height: 1000),
+              Image.asset('lib/assets/curriculo/curriculo.jpg', height: 1000),
             ],
           ),
         ),

@@ -5,16 +5,19 @@ class SobreMim extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-              color: const Color.fromARGB(255, 255, 255, 255),
-              child:
+    return ListView(
+        children: [ 
+          Container(
+            color: const Color.fromARGB(255, 255, 255, 255),
+            child:   
+            const Padding(
+            padding: EdgeInsets.all(20.0),
+            child:
                 // TEXTO CENTRALIZADO
-                const Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   Text(
                     'Sobre Mim:',
                     style: TextStyle(
@@ -50,30 +53,33 @@ class SobreMim extends StatelessWidget {
                   SizedBox(height: 20),
                   Text(
                     '''
-        UML (Linguagem de modelagem unificada) - IMT - Mauá - Instituto Mauá de Tecnologia
+          UML (Linguagem de modelagem unificada) - IMT - Mauá - Instituto Mauá de Tecnologia
 
-        SQL - IMT - Mauá - Instituto Mauá de Tecnologia 
+          SQL - IMT - Mauá - Instituto Mauá de Tecnologia 
 
-        Ciência de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-                        
-        Banco de dados - IMT - Mauá - Instituto Mauá de Tecnologia
+          Ciência de dados - IMT - Mauá - Instituto Mauá de Tecnologia
+                          
+          Banco de dados - IMT - Mauá - Instituto Mauá de Tecnologia
 
-        Modelagem de dados - IMT - Mauá - Instituto Mauá de Tecnologia
+          Modelagem de dados - IMT - Mauá - Instituto Mauá de Tecnologia
 
-        Java - IMT - Mauá - Instituto Mauá de Tecnologia
+          Java - IMT - Mauá - Instituto Mauá de Tecnologia
 
-        Python - IMT - Mauá - Instituto Mauá de Tecnologia
-        ''',
+          Python - IMT - Mauá - Instituto Mauá de Tecnologia
+          ''',
                     style: TextStyle(
                       fontSize: 20,
                       // color: Color.fromARGB(255, 255, 255, 255)
                     ),
                     textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
-            ),
-            ),
-    );
+                  )
+                ]
+              )
+            )
+          )
+          ]
+        );
+        
+                
   }
 }

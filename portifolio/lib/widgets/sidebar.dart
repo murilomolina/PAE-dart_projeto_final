@@ -10,8 +10,10 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return 
     Drawer(
+      child: Flexible(
       child: ListView(
         children: [
           const UserAccountsDrawerHeader(
@@ -57,6 +59,7 @@ class Sidebar extends StatelessWidget {
           ),
         ],
       ),
+      )
     );
   }
 }
