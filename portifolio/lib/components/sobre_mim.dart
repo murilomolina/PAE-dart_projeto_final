@@ -8,7 +8,7 @@ class SobreMim extends StatelessWidget {
     return ListView(
         children: [ 
           Container(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 2, 36, 63),
             child:   
             const Padding(
             padding: EdgeInsets.all(20.0),
@@ -23,7 +23,7 @@ class SobreMim extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 34,
                       fontWeight: FontWeight.bold,
-                      // color: Color.fromARGB(255, 255, 255, 255)
+                      color: Color.fromARGB(255, 255, 255, 255)
                     ),
                   ),
                   SizedBox(height: 20),
@@ -34,7 +34,7 @@ class SobreMim extends StatelessWidget {
                         'Sou graduando em Ciência da Computação pelo IMT - Mauá - Instituto Mauá de Tecnologia. Fluente de inglês há 4 anos',
                         style: TextStyle(
                           fontSize: 20,
-                          // color: Color.fromARGB(255, 255, 255, 255)
+                          color: Color.fromARGB(255, 255, 255, 255)
                         ),
                         textAlign: TextAlign.center,
                         maxLines: 2,
@@ -47,7 +47,7 @@ class SobreMim extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 34,
                       fontWeight: FontWeight.bold,
-                      // color: Color.fromARGB(255, 255, 255, 255)
+                      color: Color.fromARGB(255, 255, 255, 255)
                     ),
                   ),
                   SizedBox(height: 20),
@@ -69,7 +69,7 @@ class SobreMim extends StatelessWidget {
           ''',
                     style: TextStyle(
                       fontSize: 20,
-                      // color: Color.fromARGB(255, 255, 255, 255)
+                      color: Color.fromARGB(255, 255, 255, 255)
                     ),
                     textAlign: TextAlign.center,
                   )

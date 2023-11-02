@@ -36,14 +36,16 @@ class PaginaInicial extends StatelessWidget {
               ),
           ],
       ),
-      body: LayoutBuilder(
+      body: Container(
+        color: const Color.fromARGB(255, 2, 36, 63),
+      child: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth < mobileBreakpoint) {
             return const SobreMim();
           } else {
             return const Row(
               children: [
-                ColunaNAv(),
+                ColunaNav(),
                 Expanded(
                   child: SobreMim(),
                 ),
@@ -52,6 +54,7 @@ class PaginaInicial extends StatelessWidget {
             );
           }
         },
+      ),
       ),
     );
   }

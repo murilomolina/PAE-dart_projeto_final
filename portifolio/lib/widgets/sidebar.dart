@@ -13,6 +13,7 @@ class Sidebar extends StatelessWidget {
 
     return 
     Drawer(
+      backgroundColor: const Color.fromARGB(255, 22, 62, 95),
       child: Flexible(
       child: ListView(
         children: [
@@ -25,34 +26,34 @@ class Sidebar extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text('Página inicial'),
+            title: const Text('Página inicial', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaInicial()));
             },
           ),
 
           ListTile(
-            title: const Text('Links'),
+            title: const Text('Links', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaLinks()));
             },
           ),
 
           ListTile(
-            title: const Text('Currículo'),
+            title: const Text('Currículo', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaCurriculo()));
             },
           ),
           
           ListTile(
-            title: const Text('Certificados'),
+            title: const Text('Certificados', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaCertificados()));
             },
           ),
           ListTile(
-            title: const Text('Projetos'),
+            title: const Text('Projetos', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const PaginaProjetos()));
             },
