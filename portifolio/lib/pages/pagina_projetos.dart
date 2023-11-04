@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio/utils/breakpoints.dart';
+import 'package:portifolio/widgets/projeto_imagem.dart';
 import 'package:portifolio/widgets/sidebar.dart';
 
 class PaginaProjetos extends StatelessWidget {
@@ -13,17 +15,36 @@ class PaginaProjetos extends StatelessWidget {
         title: const Text('Meus Projetos'),
       ),
       drawer: const Sidebar(),
-       body: Align(
-          alignment: Alignment.topCenter,
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 1400),
-            child: ListView(
-              children:  const [
-              ]
-       )
-     ),
-    )
-  );
-  
+      backgroundColor: const Color.fromARGB(255, 2, 36, 63),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          final maxWidth = constraints.maxWidth;
+          return Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: maxWidth < mobileBreakpoint ? maxWidth : mobileBreakpoint,
+              ),
+              child: ListView(
+                children: const [
+                  ProjetoImagem(
+                    imagem: 'lib/assets/gif/projeto-em-execucao.gif',
+                    titulo: 'Projeto em andamento',
+                    descricao: 'Aqui vai a descrição do projeto',
+                    linkProjeto: '\n\nhttps://github.com/murilomolina?tab=repositories',
+                  ),
+                  ProjetoImagem(
+                    imagem: 'lib/assets/gif/projeto-em-execucao.gif',
+                    titulo: 'Projeto em andamento',
+                    descricao: 'Aqui vai a descrição do projeto',
+                    linkProjeto: '\n\nhttps://github.com/murilomolina?tab=repositories',
+                  ),
+                  // Outros projetos aqui
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 }
