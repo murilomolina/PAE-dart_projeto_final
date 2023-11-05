@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/widgets/projeto_imagem.dart';
+import 'package:portifolio/utils/descricao_projetos.dart';
+import 'package:portifolio/widgets/projeto_padrao.dart';
 import 'package:portifolio/widgets/sidebar.dart';
 
 class PaginaProjetos extends StatelessWidget {
-  const PaginaProjetos({super.key});
+  const PaginaProjetos({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,17 +27,15 @@ class PaginaProjetos extends StatelessWidget {
               ),
               child: ListView(
                 children: const [
-                  ProjetoImagem(
+                  ProjetoPadrao(
                     imagem: 'lib/assets/gif/projeto-em-execucao.gif',
                     titulo: 'Projeto em andamento',
-                    descricao: 'Aqui vai a descrição do projeto',
-                    linkProjeto: '\n\nhttps://github.com/murilomolina?tab=repositories',
+                    descricao: descricao_proj_a,
                   ),
-                  ProjetoImagem(
+                  ProjetoPadrao(
                     imagem: 'lib/assets/gif/projeto-em-execucao.gif',
                     titulo: 'Projeto em andamento',
-                    descricao: 'Aqui vai a descrição do projeto',
-                    linkProjeto: '\n\nhttps://github.com/murilomolina?tab=repositories',
+                    descricao: descricao_proj_b,
                   ),
                   // Outros projetos aqui
                 ],
