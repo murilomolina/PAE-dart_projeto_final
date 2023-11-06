@@ -38,7 +38,7 @@ class SobreMim extends StatelessWidget {
                           color: Color.fromARGB(255, 255, 255, 255)
                         ),
                         textAlign: TextAlign.center,
-                        maxLines: 2,
+                        maxLines: 5,
                       ),
                     ),
                   ),
