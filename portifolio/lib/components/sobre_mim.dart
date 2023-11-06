@@ -53,28 +53,6 @@ class SobreMim extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   TabelaCompetencias(),
-          //         Text(//minhas competencias
-          //           '''
-          // UML (Linguagem de modelagem unificada) - IMT - Mauá - Instituto Mauá de Tecnologia
-
-          // SQL - IMT - Mauá - Instituto Mauá de Tecnologia 
-
-          // Ciência de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-                          
-          // Banco de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-
-          // Modelagem de dados - IMT - Mauá - Instituto Mauá de Tecnologia
-
-          // Java - IMT - Mauá - Instituto Mauá de Tecnologia
-
-          // Python - IMT - Mauá - Instituto Mauá de Tecnologia
-          // ''',
-          //           style: TextStyle(
-          //             fontSize: 20,
-          //             color: Color.fromARGB(255, 255, 255, 255)
-          //           ),
-          //           textAlign: TextAlign.center,
-          //         )
                 ]
               )
             )
