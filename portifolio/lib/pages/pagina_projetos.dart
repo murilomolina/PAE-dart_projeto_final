@@ -20,27 +20,37 @@ class PaginaProjetos extends StatelessWidget {
       body: LayoutBuilder(
         builder: (context, constraints) {
           final maxWidth = constraints.maxWidth;
-          return Center(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(
-                maxWidth: maxWidth < mobileBreakpoint ? maxWidth : mobileBreakpoint,
-              ),
-              child: ListView(
-                children: const [
-                  ProjetoPadrao(
-                    imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                    titulo: 'Projeto em andamento',
-                    descricao: descricao_proj_a,
+          return ListView(
+            children: [
+              Center(
+                child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: maxWidth < mobileBreakpoint
+                          ? maxWidth
+                          : mobileBreakpoint,
+                    ),
+                    child: const Column(
+                      children: [
+                        ProjetoPadrao(
+                          imagem: 'lib/assets/gif/projeto-em-execucao.gif',
+                          titulo: 'Projeto em andamento',
+                          descricao: descricao_proj_a,
+                          urlProjeto:
+                              'https://github.com/murilomolina?tab=repositories',
+                        ),
+                        ProjetoPadrao(
+                          imagem: 'lib/assets/gif/projeto-em-execucao.gif',
+                          titulo: 'Projeto em andamento',
+                          descricao: descricao_proj_b,
+                          urlProjeto:
+                              'https://github.com/murilomolina?tab=repositories',
+                        ),
+                      ],
+                    )
+                    // mais projetos aqui
                   ),
-                  ProjetoPadrao(
-                    imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                    titulo: 'Projeto em andamento',
-                    descricao: descricao_proj_b,
-                  ),
-                  // Outros projetos aqui
-                ],
               ),
-            ),
+            ],
           );
         },
       ),

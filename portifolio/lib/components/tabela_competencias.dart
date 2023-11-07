@@ -17,210 +17,244 @@ class TabelaCompetencias extends StatelessWidget {
             fonte = fontSizeMin;
           } 
 
-          return DataTable(
-            // ignore: deprecated_member_use
-            dataRowHeight: 60.0,
-            columns: const [
-              DataColumn(
-                label: Text(
-                  'Competência',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+          return 
+          Center(
+            child: DataTable(
+              // ignore: deprecated_member_use
+              dataRowHeight: 60.0,
+              columns: const [
+                DataColumn(
+                  label: Text(
+                    'Competência',
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
-              ),
-              DataColumn(
-                label: Text(
-                  'Instituição',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                DataColumn(
+                  label: Text(
+                    'Instituição',
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
-              ),
-            ],
-            rows: [
-              DataRow(cells: [
-                DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'UML (Linguagem de modelagem unificada)',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+              ],
+              rows: [
+                DataRow(cells: [
+                  DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'Banco de Dados',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        maxLines: 3,
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
-                ),
-                DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+                  DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-              ]),
-          DataRow(cells: [
+                ]),
+            DataRow(cells: [
+              DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'SQL',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+              DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
+                      ),
+                    ),
+                  ),
+            ]),
+                  DataRow(cells: [
             DataCell(
-              Text(
-                'SQL',
-                style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'Ciência de Dados',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                   DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
+                      ),
+                    ),
+                  ),
+                  ]),
+                  DataRow(cells: [
             DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'Python',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-          ]),
-        DataRow(cells: [
-          DataCell(Text('Ciência de dados',
-                          style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,)),
-         DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-        ]),
-        DataRow(cells: [
-          DataCell(Text('Banco de dados',
-                  style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              ),
-          DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+                  ]),
+                  DataRow(cells: [
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'Modelagem de Dados',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-        ]),
-        DataRow(cells: [
-          DataCell(Text('Modelagem de dados',
-                  style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              ),
-          DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-        ]),
-        DataRow(cells: [
-          DataCell(Text('Java',
-                  style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              ),
-          DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+                  ]),
+                  DataRow(cells: [
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'Java',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
-                ),
-        ]),
-        DataRow(cells: [
-          DataCell(Text('Python',
-                  style: TextStyle(
-                  fontSize: fonte,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              ),
-          DataCell(
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'IMT - Mauá - Instituto Mauá de Tecnologia',
-                      style: TextStyle(
-                        fontSize: fonte,
-                        color: Colors.white,
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
                     ),
                   ),
+                  ]),
+                  DataRow(cells: [
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'UML\n(Linguagem de modelagem unificada)',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+            DataCell(
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'IMT - Mauá - Instituto Mauá de Tecnologia',
+                        style: TextStyle(
+                          fontSize: fonte,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 3,
+                      ),
+                    ),
+                  ),
+                  ],
+                  ),
+                ],
                 ),
-        ],
-        ),
-      ],
-      );
+          );
         }
       ),
     );

@@ -32,13 +32,13 @@ class SobreMim extends StatelessWidget {
                     child: Padding(
                       padding: EdgeInsets.all(20.0),
                       child: Text(
-                        'Sou graduando em Ciência da Computação pelo IMT - Mauá - Instituto Mauá de Tecnologia. Fluente de inglês há 4 anos',
+                        'Me chamo Murilo Molina Barone, tenho 20 anos, moro em Santo André, São Paulo.\n\nSou graduando em Ciência da Computação pelo IMT - Mauá - Instituto Mauá de Tecnologia. Fluente de inglês há 4 anos',
                         style: TextStyle(
                           fontSize: 20,
                           color: Color.fromARGB(255, 255, 255, 255)
                         ),
                         textAlign: TextAlign.center,
-                        maxLines: 5,
+                        
                       ),
                     ),
                   ),

@@ -5,12 +5,14 @@ class ProjetoPadrao extends StatelessWidget {
   final String imagem;
   final String titulo;
   final String descricao;
+  final String urlProjeto;
 
   const ProjetoPadrao({
     Key? key,
     required this.imagem,
     required this.titulo,
     required this.descricao,
+    required this.urlProjeto,
   }) : super(key: key);
 
   @override
@@ -27,8 +29,8 @@ class ProjetoPadrao extends StatelessWidget {
             titulo,
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
           ),
-          const LinkClicavel(
-              text: 'Clique aqui para acessar o link do projeto!', url: 'https://github.com/murilomolina?tab=repositories'),
+          LinkClicavel(
+              text: 'Clique aqui para acessar o link do projeto!', url: urlProjeto),
           const SizedBox(height: 10),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
