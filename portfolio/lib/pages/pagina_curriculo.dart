@@ -1,8 +1,9 @@
 // ignore_for_file: use_build_context_synchronously, deprecated_member_use
 import 'package:flutter/material.dart';
+import 'package:portifolio/components/coluna_nav.dart';
+import 'package:portifolio/utils/breakpoints.dart';
 import 'package:portifolio/widgets/download_file.dart';
 import 'package:portifolio/widgets/sidebar.dart';
-
 
 class PaginaCurriculo extends StatelessWidget {
   const PaginaCurriculo({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class PaginaCurriculo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    double paddingPercentage = 0.08; 
+    double paddingPercentage = 0.08;
 
     final paddingValue = screenWidth * paddingPercentage;
 
@@ -24,22 +25,56 @@ class PaginaCurriculo extends StatelessWidget {
             icon: const Icon(Icons.download),
             onPressed: () => DownloadFile.downloadFile(context),
           ),
+          if (MediaQuery.of(context).size.width < mobileBreakpoint)
+            IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sidebar(),
+                  ),
+                );
+              },
+            ),
         ],
       ),
-      drawer: const Sidebar(),
-      body: 
-      Center(
-        child: Container(
-          color: const Color.fromARGB(255, 2, 36, 63),
-          child: ListView(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(paddingValue),
-                child: Image.asset('lib/assets/curriculo/curriculo.jpg',),
+      body: Container(
+        color: const Color.fromARGB(255, 2, 36, 63),
+        child: LayoutBuilder(builder: (context, constraints) {
+          if (constraints.maxWidth < mobileBreakpoint) {
+            return Center(
+              child: ListView(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(paddingValue),
+                    child: Image.asset(
+                      'lib/assets/curriculo/curriculo.jpg',
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
+            );
+          } else {
+            return Row(
+              children: [
+                const ColunaNav(),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(paddingValue),
+                        child: Image.asset(
+                          'lib/assets/curriculo/curriculo.jpg',
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            );
+          }
+        }),
       ),
     );
   }

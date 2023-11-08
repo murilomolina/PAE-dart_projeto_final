@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav.dart';
+import 'package:portifolio/components/coluna_nav_p_inicial.dart';
 import 'package:portifolio/utils/breakpoints.dart';
 import 'package:portifolio/components/sobre_mim.dart';
 import 'package:portifolio/widgets/sidebar.dart';
@@ -22,39 +22,38 @@ class PaginaInicial extends StatelessWidget {
         automaticallyImplyLeading: false,
         titleSpacing: 16,
         actions: [
-            if (MediaQuery.of(context).size.width < mobileBreakpoint)
-              IconButton(
-                icon: const Icon(Icons.menu),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Sidebar(),
-                    ),
-                  );
-                },
-              ),
-          ],
+          if (MediaQuery.of(context).size.width < mobileBreakpoint)
+            IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sidebar(),
+                  ),
+                );
+              },
+            ),
+        ],
       ),
       body: Container(
         color: const Color.fromARGB(255, 2, 36, 63),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          if (constraints.maxWidth < mobileBreakpoint) {
-            return const SobreMim();
-          } else {
-            return const Row(
-              children: [
-                ColunaNav(),
-                Expanded(
-                  child: SobreMim(),
-                ),
-              ],
-              
-            );
-          }
-        },
-      ),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            if (constraints.maxWidth < mobileBreakpoint) {
+              return const SobreMim();
+            } else {
+              return const Row(
+                children: [
+                  ColunaNavPInicial(),
+                  Expanded(
+                    child: SobreMim(),
+                  ),
+                ],
+              );
+            }
+          },
+        ),
       ),
     );
   }
