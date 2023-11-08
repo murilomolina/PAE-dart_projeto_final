@@ -65,10 +65,8 @@ class Sidebar extends StatelessWidget {
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Email:', style: TextStyle(color: Colors.white)),
                 TextoClicavel('murilo.m.barone@gmail.com\n'),
-                SizedBox(height: 8),
-                Text('Celular:', style: TextStyle(color: Colors.white)),
+                SizedBox(height: 10),
                 TextoClicavel('+55(11)94350-3192\n'),
               ],
           ),
