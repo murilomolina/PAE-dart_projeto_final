@@ -44,16 +44,16 @@ class PaginaProjetos extends StatelessWidget {
                     ),
                     child: const Column(
                       children: [
-                        ProjetoPadrao(
+                        ProjetoPadrao(//projeto 01
                           imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                          titulo: 'Projeto em andamento',
+                          titulo: 'Projeto Site Missão Ambiental',
                           descricao: descricao_proj_a,
                           urlProjeto:
-                              'https://github.com/murilomolina?tab=repositories',
+                              'https://github.com/Parelho/PI_2_Semestre',
                         ),
-                        ProjetoPadrao(
+                        ProjetoPadrao(// projeto 02
                           imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                          titulo: 'Projeto em andamento',
+                          titulo: 'Projeto em andamento!!',
                           descricao: descricao_proj_b,
                           urlProjeto:
                               'https://github.com/murilomolina?tab=repositories',

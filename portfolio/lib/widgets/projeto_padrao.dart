@@ -27,10 +27,10 @@ class ProjetoPadrao extends StatelessWidget {
         children: [
           Text(
             titulo,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+            style:  const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           LinkClicavel(
-              text: 'Clique aqui para acessar o link do projeto!', url: urlProjeto),
+              text: 'Clique aqui para acessar repositório do projeto!', url: urlProjeto),
           const SizedBox(height: 10),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,

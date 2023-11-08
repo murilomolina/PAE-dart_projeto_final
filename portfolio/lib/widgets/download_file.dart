@@ -48,7 +48,7 @@ class DownloadFile {
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Download falhou. Você pode acessar o Documento via github'),
+          content: const Text('Download falhou. Você pode acessar o Documento em PDF via github'),
           action: snackBarAction,
            duration: const Duration(seconds: 60),
         ),
