@@ -4,6 +4,7 @@ import 'package:portifolio/pages/pagina_curriculo.dart';
 import 'package:portifolio/pages/pagina_links.dart';
 import 'package:portifolio/pages/pagina_projetos.dart';
 import 'package:portifolio/widgets/custom_button.dart.dart';
+import 'package:portifolio/widgets/texto_clicavel.dart';
 
 class ColunaNav extends StatelessWidget {
   const ColunaNav({super.key});
@@ -29,10 +30,8 @@ class ColunaNav extends StatelessWidget {
                           style: TextStyle(color: Colors.white),
                           textAlign: TextAlign.center
                           ),
-                      const Text('murilo.m.barone@gmail.com\n',
-                          style: TextStyle(color: Colors.white),
-                          textAlign: TextAlign.center
-                          ),
+                      const TextoClicavel('murilo.m.barone@gmail.com\n'),
+                      const TextoClicavel('+55(11)94350-3192\n'),
                       CustomButton(
                         text: 'Meus Links',
                         onPressed: () {

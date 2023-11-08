@@ -9,6 +9,11 @@ class PaginaCurriculo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    double paddingPercentage = 0.08; 
+
+    final paddingValue = screenWidth * paddingPercentage;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -22,17 +27,20 @@ class PaginaCurriculo extends StatelessWidget {
         ],
       ),
       drawer: const Sidebar(),
-      body: Center(
+      body: 
+      Center(
         child: Container(
           color: const Color.fromARGB(255, 2, 36, 63),
           child: ListView(
             children: [
-              Image.asset('lib/assets/curriculo/curriculo.jpg', height: 1000),
+              Padding(
+                padding: EdgeInsets.all(paddingValue),
+                child: Image.asset('lib/assets/curriculo/curriculo.jpg',),
+              ),
             ],
           ),
         ),
       ),
     );
   }
-    
 }
