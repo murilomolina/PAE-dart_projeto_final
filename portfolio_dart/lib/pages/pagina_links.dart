@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav.dart';
-import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/widgets/links_widget.dart';
-import 'package:portifolio/widgets/sidebar.dart';
+import 'package:portfolio_dart/components/coluna_nav.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/links_widget.dart';
+import 'package:portfolio_dart/widgets/sidebar.dart';
+
 
 class PaginaLinks extends StatelessWidget {
   final String urlGit = 'https://github.com/murilomolina';

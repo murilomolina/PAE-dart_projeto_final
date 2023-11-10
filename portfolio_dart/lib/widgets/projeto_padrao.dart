@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/widgets/link_clicavel.dart';
+import 'package:portfolio_dart/widgets/link_clicavel.dart';
 
 class ProjetoPadrao extends StatelessWidget {
   final String imagem;

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav.dart';
-import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/utils/descricao_projetos.dart';
-import 'package:portifolio/widgets/projeto_padrao.dart';
-import 'package:portifolio/widgets/sidebar.dart';
+import 'package:portfolio_dart/components/coluna_nav.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/utils/descricao_projetos.dart';
+import 'package:portfolio_dart/widgets/projeto_padrao.dart';
+import 'package:portfolio_dart/widgets/sidebar.dart';
+
 
 class PaginaProjetos extends StatelessWidget {
   const PaginaProjetos({Key? key}) : super(key: key);

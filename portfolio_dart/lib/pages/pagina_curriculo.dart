@@ -1,9 +1,10 @@
 // ignore_for_file: use_build_context_synchronously, deprecated_member_use
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav.dart';
-import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/widgets/download_file.dart';
-import 'package:portifolio/widgets/sidebar.dart';
+import 'package:portfolio_dart/components/coluna_nav.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/download_file.dart';
+import 'package:portfolio_dart/widgets/sidebar.dart';
+
 
 class PaginaCurriculo extends StatelessWidget {
   const PaginaCurriculo({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/widgets/certificado_box.dart';
+import 'package:portfolio_dart/widgets/certificado_box.dart';
 
 class ContCertificados extends StatelessWidget {
   const ContCertificados({super.key});

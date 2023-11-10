@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav_inicial.dart';
-import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/components/sobre_mim.dart';
-import 'package:portifolio/widgets/sidebar.dart';
+import 'package:portfolio_dart/components/coluna_nav_inicial.dart';
+import 'package:portfolio_dart/components/sobre_mim.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/sidebar.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});

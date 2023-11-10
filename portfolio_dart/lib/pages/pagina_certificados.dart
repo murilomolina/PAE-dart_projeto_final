@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/coluna_nav.dart';
-import 'package:portifolio/components/cont_certificados.dart';
-import 'package:portifolio/utils/breakpoints.dart';
-import 'package:portifolio/widgets/sidebar.dart';
+import 'package:portfolio_dart/components/coluna_nav.dart';
+import 'package:portfolio_dart/components/cont_certificados.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/sidebar.dart';
 
 class PaginaCertificados extends StatelessWidget {
   const PaginaCertificados({super.key});

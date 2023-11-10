@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/utils/breakpoints.dart';
+import 'package:portfolio_dart/utils/breakpoints.dart';
 
 class TabelaCompetencias extends StatelessWidget {
   const TabelaCompetencias({super.key});

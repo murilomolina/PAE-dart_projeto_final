@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/pages/pagina_certificados.dart';
-import 'package:portifolio/pages/pagina_curriculo.dart';
-import 'package:portifolio/pages/pagina_inicial.dart';
-import 'package:portifolio/pages/pagina_links.dart';
-import 'package:portifolio/pages/pagina_projetos.dart';
-import 'package:portifolio/widgets/texto_clicavel.dart';
+import 'package:portfolio_dart/pages/pagina_certificados.dart';
+import 'package:portfolio_dart/pages/pagina_curriculo.dart';
+import 'package:portfolio_dart/pages/pagina_inicial.dart';
+import 'package:portfolio_dart/pages/pagina_links.dart';
+import 'package:portfolio_dart/pages/pagina_projetos.dart';
+import 'package:portfolio_dart/widgets/texto_clicavel.dart';
+
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
@@ -86,7 +87,7 @@ class Sidebar extends StatelessWidget {
           Container(
             color: const Color.fromARGB(255, 22, 62, 95),
             padding: const EdgeInsets.only(top: 60.0, bottom: 60.0, left: 20.0),
-            child: const Column(
+            child:  const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TextoClicavel('murilo.m.barone@gmail.com\n'),

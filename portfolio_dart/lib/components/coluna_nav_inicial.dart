@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/pages/pagina_certificados.dart';
-import 'package:portifolio/pages/pagina_curriculo.dart';
-import 'package:portifolio/pages/pagina_inicial.dart';
-import 'package:portifolio/pages/pagina_links.dart';
-import 'package:portifolio/pages/pagina_projetos.dart';
-import 'package:portifolio/widgets/custom_button.dart.dart';
-import 'package:portifolio/widgets/texto_clicavel.dart';
+import 'package:portfolio_dart/pages/pagina_certificados.dart';
+import 'package:portfolio_dart/pages/pagina_curriculo.dart';
+import 'package:portfolio_dart/pages/pagina_links.dart';
+import 'package:portfolio_dart/pages/pagina_projetos.dart';
+import 'package:portfolio_dart/widgets/custom_button.dart.dart';
+import 'package:portfolio_dart/widgets/texto_clicavel.dart';
 
-class ColunaNav extends StatelessWidget {
-  const ColunaNav({super.key});
+
+class ColunaNavInicial extends StatelessWidget {
+  const ColunaNavInicial({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +32,6 @@ class ColunaNav extends StatelessWidget {
           const TextoClicavel('murilo.m.barone@gmail.com'),
           const SizedBox(height: 9.0,),
           const TextoClicavel('+55(11)94350-3192'),
-          CustomButton(text: 'Página Inicial', onPressed: () { 
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> const PaginaInicial()));
-           },),
           CustomButton(
             text: 'Meus Links',
             onPressed: () {

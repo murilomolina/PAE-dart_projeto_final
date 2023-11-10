@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/pages/pagina_inicial.dart';
+import 'package:portfolio_dart/pages/pagina_inicial.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});

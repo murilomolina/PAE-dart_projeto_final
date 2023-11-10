@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/components/tabela_competencias.dart';
+import 'package:portfolio_dart/components/tabela_competencias.dart';
 
 class SobreMim extends StatelessWidget {
   const SobreMim({super.key});
