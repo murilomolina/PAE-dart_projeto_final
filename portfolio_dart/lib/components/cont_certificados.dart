@@ -26,6 +26,14 @@ class ContCertificados extends StatelessWidget {
           text:
               'lib/assets/certificados/CM4042-FundjamentosdjeComputacaoemNuvem-AWSAcadjemy-2023 (1)_page-0001.jpg',
         ),
+        CertificadoBox(
+          text: 
+              'lib/assets/certificados/CC2011-DesenvolvimentodjeAplicacoesHibridjascomFlutter-2023_page-0001.jpg',
+        ),
+        CertificadoBox(
+          text: 
+              'lib/assets/certificados/CM2072-PreparatorioparaDesafiosdjeSegurancaCibernetica-2023_page-0001.jpg',
+        ),
       ],
     );
   }
