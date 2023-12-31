@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_dart/components/coluna_nav_inicial.dart';
+import 'package:portfolio_dart/components/coluna_nav.dart';
 import 'package:portfolio_dart/components/sobre_mim.dart';
 import 'package:portfolio_dart/utils/breakpoints.dart';
 import 'package:portfolio_dart/widgets/sidebar.dart';
@@ -45,7 +45,7 @@ class PaginaInicial extends StatelessWidget {
             } else {
               return const Row(
                 children: [
-                  ColunaNavInicial(),
+                  ColunaNav(),
                   Expanded(
                     child: SobreMim(),
                   ),

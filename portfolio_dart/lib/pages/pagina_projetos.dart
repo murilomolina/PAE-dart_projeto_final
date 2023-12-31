@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_dart/components/coluna_nav.dart';
 import 'package:portfolio_dart/utils/breakpoints.dart';
 import 'package:portfolio_dart/utils/descricao_projetos.dart';
+import 'package:portfolio_dart/widgets/arrow_back.dart';
 import 'package:portfolio_dart/widgets/projeto_padrao.dart';
 import 'package:portfolio_dart/widgets/sidebar.dart';
 
@@ -16,6 +17,7 @@ class PaginaProjetos extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 140, 196),
         title: const Text('Meus Projetos'),
+        leading: const ArrowBack(),
         actions: [
           if (MediaQuery.of(context).size.width < mobileBreakpoint)
             IconButton(

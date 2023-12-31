@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_dart/pages/pagina_certificados.dart';
 import 'package:portfolio_dart/pages/pagina_curriculo.dart';
-import 'package:portfolio_dart/pages/pagina_inicial.dart';
 import 'package:portfolio_dart/pages/pagina_links.dart';
 import 'package:portfolio_dart/pages/pagina_projetos.dart';
 import 'package:portfolio_dart/widgets/texto_clicavel.dart';
-
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
@@ -23,18 +21,6 @@ class Sidebar extends StatelessWidget {
               backgroundImage: NetworkImage(
                   'https://avatars.githubusercontent.com/u/122751852?v=4'),
             ),
-          ),
-          ListTile(
-            title: const Text('Página inicial',
-                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
-            onTap: () {
-              
-              Navigator.pushAndRemoveUntil(
-                context,
-                MaterialPageRoute(builder: (context) => const PaginaInicial()),
-                (route) => false,
-              );
-            },
           ),
           ListTile(
             title: const Text('Links',

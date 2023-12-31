@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_dart/components/coluna_nav.dart';
 import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/arrow_back.dart';
 import 'package:portfolio_dart/widgets/download_file.dart';
 import 'package:portfolio_dart/widgets/sidebar.dart';
 
@@ -21,6 +22,7 @@ class PaginaCurriculo extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 140, 196),
         title: const Text('Meu Currículo'),
+        leading: const ArrowBack(),
         actions: [
           IconButton(
             icon: const Icon(Icons.download),

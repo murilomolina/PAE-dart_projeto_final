@@ -32,9 +32,6 @@ class ColunaNav extends StatelessWidget {
           const TextoClicavel('murilo.m.barone@gmail.com'),
           const SizedBox(height: 9.0,),
           const TextoClicavel('+55(11)94350-3192'),
-          CustomButton(text: 'Página Inicial', onPressed: () { 
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> const PaginaInicial()));
-           },),
           CustomButton(
             text: 'Meus Links',
             onPressed: () {

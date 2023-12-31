@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_dart/components/coluna_nav.dart';
 import 'package:portfolio_dart/utils/breakpoints.dart';
+import 'package:portfolio_dart/widgets/arrow_back.dart';
 import 'package:portfolio_dart/widgets/links_widget.dart';
 import 'package:portfolio_dart/widgets/sidebar.dart';
 
@@ -24,6 +25,7 @@ class PaginaLinks extends StatelessWidget {
           centerTitle: true,
           backgroundColor: const Color.fromARGB(255, 0, 140, 196),
           title: const Text('Meus Links'),
+          leading: const ArrowBack(),
           actions: [
             if (MediaQuery.of(context).size.width < mobileBreakpoint)
               IconButton(
