@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_dart/pages/pagina_certificados.dart';
 import 'package:portfolio_dart/pages/pagina_curriculo.dart';
-import 'package:portfolio_dart/pages/pagina_inicial.dart';
 import 'package:portfolio_dart/pages/pagina_links.dart';
 import 'package:portfolio_dart/pages/pagina_projetos.dart';
 import 'package:portfolio_dart/widgets/custom_button.dart.dart';
