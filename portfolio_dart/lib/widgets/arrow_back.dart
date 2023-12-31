@@ -6,15 +6,20 @@ class ArrowBack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton( //Lógica para a seta voltar pra página inicial
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-            Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PaginaInicial()));
-          },
-        );
+    return Tooltip(
+      message: 'Voltar para a Página Inicial', // Mensagem
+      child: IconButton(
+        icon: const Icon(Icons.arrow_back),
+        onPressed: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PaginaInicial(),
+            ),
+          );
+        },
+      ),
+    );
   }
 }

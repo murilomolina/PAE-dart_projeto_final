@@ -48,16 +48,16 @@ class PaginaProjetos extends StatelessWidget {
                     child: const Column(
                       children: [
                         ProjetoPadrao(//projeto 01
-                          imagem: 'lib/assets/gif/projeto-em-execucao.gif',
+                          imagem: 'lib/assets/pre_exibicao/proj_missao_ambiental.jpg',
                           titulo: 'Projeto Site Missão Ambiental',
-                          descricao: descricao_proj_a,
+                          descricao: descricao_proj_missao_ambiental,
                           urlProjeto:
                               'https://github.com/Parelho/PI_2_Semestre',
                         ),
                         ProjetoPadrao(// projeto 02
-                          imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                          titulo: 'Projeto em andamento!!',
-                          descricao: descricao_proj_b,
+                          imagem: 'lib/assets/pre_exibicao/exemplo.jpg',
+                          titulo: 'Gerar um documento de Memorial de Calculos Basicos para OODC e EIV/RIT',
+                          descricao: descricao_proj_gerar_doc,
                           urlProjeto:
                               'https://github.com/murilomolina?tab=repositories',
                         ),
@@ -84,16 +84,16 @@ class PaginaProjetos extends StatelessWidget {
                         child: const Column(
                           children: [
                             ProjetoPadrao(
-                              imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                              titulo: 'Projeto Site Missão Ambiental',
-                              descricao: descricao_proj_a,
+                              imagem: 'lib/assets/pre_exibicao/proj_missao_ambiental.jpg',
+                              titulo: 'Site Missão Ambiental',
+                              descricao: descricao_proj_missao_ambiental,
                               urlProjeto:
                                   'https://github.com/Parelho/PI_2_Semestre',
                             ),
                             ProjetoPadrao(
-                              imagem: 'lib/assets/gif/projeto-em-execucao.gif',
-                              titulo: 'Projeto em andamento!!',
-                              descricao: descricao_proj_b,
+                              imagem: 'lib/assets/pre_exibicao/exemplo.jpg',
+                              titulo: 'Gerar um documento de Memorial de Calculos Basicos para OODC e EIV/RIT',
+                              descricao: descricao_proj_gerar_doc,
                               urlProjeto:
                                   'https://github.com/murilomolina?tab=repositories',
                             ),
